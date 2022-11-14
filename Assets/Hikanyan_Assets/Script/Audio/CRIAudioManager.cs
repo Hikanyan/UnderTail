@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using CriWare;
-using UnityEditor;
 using System;
 public class CRIAudioManager : MonoBehaviour
 {
@@ -56,8 +54,53 @@ public class CRIAudioManager : MonoBehaviour
     {
         //ゲーム内プレビュー用のレベルモニター機能を追加
         CriAtom.SetBusAnalyzer(true);
+        //音量設定のロード
         //PlayerSettings setting = SaveLoad.LoadSettings<PlayerSettings>();
         //_bgmPlayVolume = setting.BGMVolume;
         //_sePlayVolume = setting.SEVolume;
+    }
+
+    public void CRIPlayBGM(int index)
+    {
+        bool startFlag = false;
+        CriAtomSource.Status status = _criAtomSourceBgm.status;
+        if ((status == CriAtomSource.Status.Stop) || (status == CriAtomSource.Status.PlayEnd))
+        {
+            this._criAtomExPlayback = _criAtomSourceBgm.Play(index);
+            startFlag = true;
+        }
+        if (startFlag == false)
+        {
+            int cur = this._criAtomExPlayback.GetCurrentBlockIndex();
+            CriAtomExAcb acb = CriAtom.GetAcb("_cueSheetBGM");
+            if (acb != null)
+            {
+                acb.GetCueInfo(index, out _cueInfo);
+
+                cur++;
+                if (_cueInfo.numBlocks > 0)
+                {
+                    _criAtomExPlayback.SetNextBlockIndex(cur % _cueInfo.numBlocks);
+                }
+            }
+        }
+    }
+    public void CRIPlayBGM(int index, float delayTime)
+    {
+        StartCoroutine(CRIDelayPlaySound(index, delayTime));
+    }
+    private IEnumerator CRIDelayPlaySound(int index, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        CRIPlayBGM(index);
+    }
+
+    public void CRIPauseAudio(bool isPause)
+    {
+        _criAtomSourceBgm.Pause(isPause);
+    }
+    public void CRIPlaySE(int index)
+    {
+        _criAtomSourceSe.Play(index);
     }
 }
