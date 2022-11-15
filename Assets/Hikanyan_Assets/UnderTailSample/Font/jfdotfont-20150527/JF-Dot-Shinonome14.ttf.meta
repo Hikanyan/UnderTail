@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 87b9bd6cca9306443b2e87f3edb9a6ec
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - JF Dot Shinonome Gothic 14
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 556b8eacb4bfe69438aa1b1920712999, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 189d5c6acd33c744a99abeaf46f05a85
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - JF Dot Shinonome Mincho 14
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e64b809d4aa81ad4ebdf875a37471445, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

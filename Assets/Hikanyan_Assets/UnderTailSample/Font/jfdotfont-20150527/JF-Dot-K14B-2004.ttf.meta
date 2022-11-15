@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7dbe04bfb2649d64cbc05bcc91d80c90
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - JF Dot K14-2004
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2352e14b3fec3e4469f74b382e65b3dc, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

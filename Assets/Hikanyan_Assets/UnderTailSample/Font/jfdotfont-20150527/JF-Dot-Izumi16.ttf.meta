@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1a8adf7d51df39049a63dbd9c072bc65
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - JF Dot Izumi Gothic 16
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 01515a4def3d06548a575238cb8ab9dc, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
