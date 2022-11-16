@@ -6,17 +6,14 @@ public class CRIAudioManager : MonoBehaviour
 {
     public static CRIAudioManager instance;
     [SerializeField] string _streamingAssetsPathACF;//.acf
-    [SerializeField] string _cueSheetBGM;//.acb
-    [SerializeField] string _cueSheetSE;//,acb
+    [SerializeField] string _cueSheetAll;//.acb
 
-    [SerializeField, Range(0f, 1f)] float _bgmPlayVolume = default;
-    [SerializeField, Range(0f, 1f)] float _sePlayVolume = default;
+    [SerializeField, Range(0f, 1f)] float _allPlayVolume = default;
 
     CriAtomExPlayback _criAtomExPlayback;
     CriAtomEx.CueInfo _cueInfo;
 
-    CriAtomSource _criAtomSourceBgm;
-    CriAtomSource _criAtomSourceSe;
+    CriAtomSource _criAtomSourceAll;
 
     int _cueIndexID;
     void Awake()
@@ -32,16 +29,11 @@ public class CRIAudioManager : MonoBehaviour
             new GameObject().AddComponent<CriAtom>();
 
             //BGM.acb
-            CriAtom.AddCueSheet(_cueSheetBGM, $"{_cueSheetBGM}.acb", null, null);
-            //SE.acb
-            CriAtom.AddCueSheet(_cueSheetSE, $"{_cueSheetSE}.acb", null, null);
+            CriAtom.AddCueSheet(_cueSheetAll, $"{_cueSheetAll}.acb", null, null);
 
             //CriAtomSourceBGM
-            _criAtomSourceBgm = gameObject.AddComponent<CriAtomSource>();
-            _criAtomSourceBgm.cueSheet = _cueSheetBGM;
-            //CriAtomSourceSE
-            _criAtomSourceSe = gameObject.AddComponent<CriAtomSource>();
-            _criAtomSourceSe.cueSheet = _cueSheetSE;
+            _criAtomSourceAll = gameObject.AddComponent<CriAtomSource>();
+            _criAtomSourceAll.cueSheet = _cueSheetAll;
 
             DontDestroyOnLoad(gameObject);
         }
@@ -63,16 +55,16 @@ public class CRIAudioManager : MonoBehaviour
     public void CRIPlayBGM(int index)
     {
         bool startFlag = false;
-        CriAtomSource.Status status = _criAtomSourceBgm.status;
+        CriAtomSource.Status status = _criAtomSourceAll.status;
         if ((status == CriAtomSource.Status.Stop) || (status == CriAtomSource.Status.PlayEnd))
         {
-            this._criAtomExPlayback = _criAtomSourceBgm.Play(index);
+            this._criAtomExPlayback = _criAtomSourceAll.Play(index);
             startFlag = true;
         }
         if (startFlag == false)
         {
             int cur = this._criAtomExPlayback.GetCurrentBlockIndex();
-            CriAtomExAcb acb = CriAtom.GetAcb("_cueSheetBGM");
+            CriAtomExAcb acb = CriAtom.GetAcb(_cueSheetAll);
             if (acb != null)
             {
                 acb.GetCueInfo(index, out _cueInfo);
@@ -95,6 +87,6 @@ public class CRIAudioManager : MonoBehaviour
         CRIPlayBGM(index);
     }
 
-    public void CRIPauseAudio(bool isPause) => _criAtomSourceBgm.Pause(isPause);
-    public void CRIPlaySE(int index) => _criAtomSourceSe.Play(index);
+    public void CRIPauseAudio(bool isPause) => _criAtomSourceAll.Pause(isPause);
+    public void CRIPlaySE(int index) => _criAtomSourceAll.Play(index);
 }
