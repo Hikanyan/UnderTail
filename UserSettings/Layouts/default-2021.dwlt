@@ -8,21 +8,21 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 2249
-    y: 302.5
-    width: 1206
-    height: 715
-  m_ShowMode: 4
-  m_Title: 
-  m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
-  m_MaxSize: {x: 10000, y: 10000}
+    x: 399
+    y: 255
+    width: 687
+    height: 793
+  m_ShowMode: 0
+  m_Title: Atom Browser
+  m_RootView: {fileID: 4}
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
   m_Maximized: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -33,22 +33,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 3}
-  m_Position:
+  m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 30
-    width: 1206
-    height: 665
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
-  vertical: 0
-  controlID: 119
+    y: 43
+    width: 1920
+    height: 989
+  m_ShowMode: 4
+  m_Title: Project
+  m_RootView: {fileID: 5}
+  m_MinSize: {x: 875, y: 300}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_Maximized: 1
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -57,22 +56,22 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: CriAtomWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 921
+    x: 0
     y: 0
-    width: 285
-    height: 665
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+    width: 687
+    height: 793
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 13}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &4
@@ -83,52 +82,23 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
+  m_Children:
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 228
-    height: 394
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 0
+    width: 687
+    height: 793
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 3768
 --- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 394
-    width: 921
-    height: 271
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
-  m_Panes:
-  - {fileID: 12}
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,18 +111,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 2}
+  - {fileID: 6}
   - {fileID: 8}
+  - {fileID: 7}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1206
-    height: 715
+    width: 1920
+    height: 989
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &7
+  m_UseTopView: 1
+  m_TopViewHeight: 30
+  m_UseBottomView: 1
+  m_BottomViewHeight: 20
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,14 +143,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1206
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LoadedToolbars: []
-  m_MainToolbar: {fileID: 18}
-  m_LastLoadedLayoutName: Default
---- !u!114 &8
+  m_LastLoadedLayoutName: Hikanyan Layout
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,11 +164,35 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 695
-    width: 1206
+    y: 969
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1920
+    height: 939
+  m_MinSize: {x: 400, y: 200}
+  m_MaxSize: {x: 32384, y: 16192}
+  vertical: 1
+  controlID: 3494
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,17 +207,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 10}
-  - {fileID: 5}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 921
-    height: 665
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
-  vertical: 1
-  controlID: 92
+    width: 1920
+    height: 939
+  m_MinSize: {x: 400, y: 200}
+  m_MaxSize: {x: 32384, y: 16192}
+  vertical: 0
+  controlID: 3495
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,23 +226,24 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneView
   m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 4}
-  - {fileID: 11}
+  m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 921
-    height: 394
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
-  vertical: 0
-  controlID: 93
+    width: 790
+    height: 939
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -255,26 +252,3337 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 12}
+  - {fileID: 16}
+  m_Position:
+    serializedVersion: 2
+    x: 790
+    y: 0
+    width: 1130
+    height: 939
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 1
+  controlID: 3538
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 13}
+  - {fileID: 14}
+  - {fileID: 15}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1130
+    height: 518
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 8096}
+  vertical: 0
+  controlID: 3539
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneHierarchyWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 228
+    x: 0
     y: 0
-    width: 693
-    height: 394
+    width: 208
+    height: 518
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 15}
-  - {fileID: 16}
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 208
+    y: 0
+    width: 323
+    height: 518
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 21}
+  m_Panes:
+  - {fileID: 21}
+  - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &12
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 531
+    y: 0
+    width: 599
+    height: 518
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 23}
+  m_Panes:
+  - {fileID: 23}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: PackageManagerWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 518
+    width: 1130
+    height: 421
+  m_MinSize: {x: 800, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  - {fileID: 24}
+  - {fileID: 25}
+  - {fileID: 26}
+  - {fileID: 27}
+  m_Selected: 0
+  m_LastSelected: 4
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bacfcb712a3304a40b91990e9f581c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Atom Browser
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 399
+    y: 255
+    width: 687
+    height: 772
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  searchPath: G:/HighPriorityProjects/Unity/UnderTail/Assets/StreamingAssets
+  projInfo:
+    acfInfoList:
+    - name: Undertaile
+      id: 0
+      assetGuid: c6b82d2c34834194eb4508c9f24210bc
+      comment: 
+      filePath: Undertaile.acf
+      dspBusSettingsList:
+      - DspBusSetting_0
+    acbInfoList:
+    - name: CueSheet_All
+      id: 0
+      assetGuid: 3a21f2931cb81fe4c97ad977a7a83013
+      comment: 
+      acbPath: CueSheet_All.acb
+      awbPath: 
+      cueInfoList:
+      - name: abc_123_a
+        id: 0
+        assetGuid: 
+        comment: 
+        length: 6060
+        isPublic: 1
+      - name: mus_a2
+        id: 1
+        assetGuid: 
+        comment: 
+        length: 14222
+        isPublic: 1
+      - name: mus_alphysfix
+        id: 2
+        assetGuid: 
+        comment: 
+        length: 3641
+        isPublic: 1
+      - name: mus_amalgam
+        id: 3
+        assetGuid: 
+        comment: 
+        length: 80017
+        isPublic: 1
+      - name: mus_ambientwater
+        id: 4
+        assetGuid: 
+        comment: 
+        length: 3014
+        isPublic: 1
+      - name: mus_anothermedium
+        id: 5
+        assetGuid: 
+        comment: 
+        length: 142156
+        isPublic: 1
+      - name: mus_bad
+        id: 6
+        assetGuid: 
+        comment: 
+        length: 998
+        isPublic: 1
+      - name: mus_barrier
+        id: 7
+        assetGuid: 
+        comment: 
+        length: 28387
+        isPublic: 1
+      - name: mus_battle1
+        id: 8
+        assetGuid: 
+        comment: 
+        length: 55083
+        isPublic: 1
+      - name: mus_battle2
+        id: 9
+        assetGuid: 
+        comment: 
+        length: 61715
+        isPublic: 1
+      - name: mus_bergentruckung
+        id: 10
+        assetGuid: 
+        comment: 
+        length: 17160
+        isPublic: 1
+      - name: mus_bgflameA
+        id: 11
+        assetGuid: 
+        comment: 
+        length: 4530
+        isPublic: 1
+      - name: mus_birdnoise
+        id: 12
+        assetGuid: 
+        comment: 
+        length: 26028
+        isPublic: 1
+      - name: mus_birdsong
+        id: 13
+        assetGuid: 
+        comment: 
+        length: 25102
+        isPublic: 1
+      - name: mus_boss1
+        id: 14
+        assetGuid: 
+        comment: 
+        length: 108454
+        isPublic: 1
+      - name: mus_cast_1
+        id: 15
+        assetGuid: 
+        comment: 
+        length: 35657
+        isPublic: 1
+      - name: mus_cast_2
+        id: 16
+        assetGuid: 
+        comment: 
+        length: 19200
+        isPublic: 1
+      - name: mus_cast_3
+        id: 17
+        assetGuid: 
+        comment: 
+        length: 35658
+        isPublic: 1
+      - name: mus_cast_4
+        id: 18
+        assetGuid: 
+        comment: 
+        length: 49880
+        isPublic: 1
+      - name: mus_cast_5
+        id: 19
+        assetGuid: 
+        comment: 
+        length: 71286
+        isPublic: 1
+      - name: mus_cast_6
+        id: 20
+        assetGuid: 
+        comment: 
+        length: 21819
+        isPublic: 1
+      - name: mus_cast_7
+        id: 21
+        assetGuid: 
+        comment: 
+        length: 21234
+        isPublic: 1
+      - name: mus_chokedup
+        id: 22
+        assetGuid: 
+        comment: 
+        length: 131208
+        isPublic: 1
+      - name: mus_churchbell
+        id: 23
+        assetGuid: 
+        comment: 
+        length: 9164
+        isPublic: 1
+      - name: mus_computer
+        id: 24
+        assetGuid: 
+        comment: 
+        length: 1256
+        isPublic: 1
+      - name: mus_confession
+        id: 25
+        assetGuid: 
+        comment: 
+        length: 19795
+        isPublic: 1
+      - name: mus_coolbeat
+        id: 26
+        assetGuid: 
+        comment: 
+        length: 1590
+        isPublic: 1
+      - name: mus_core
+        id: 27
+        assetGuid: 
+        comment: 
+        length: 164587
+        isPublic: 1
+      - name: mus_core_ambience
+        id: 28
+        assetGuid: 
+        comment: 
+        length: 5085
+        isPublic: 1
+      - name: mus_coretransition
+        id: 29
+        assetGuid: 
+        comment: 
+        length: 11901
+        isPublic: 1
+      - name: mus_creepy_ambience
+        id: 30
+        assetGuid: 
+        comment: 
+        length: 20591
+        isPublic: 1
+      - name: mus_crickets
+        id: 31
+        assetGuid: 
+        comment: 
+        length: 39643
+        isPublic: 1
+      - name: mus_cymbal
+        id: 32
+        assetGuid: 
+        comment: 
+        length: 5189
+        isPublic: 1
+      - name: mus_dance_of_dog
+        id: 33
+        assetGuid: 
+        comment: 
+        length: 13736
+        isPublic: 1
+      - name: mus_date
+        id: 34
+        assetGuid: 
+        comment: 
+        length: 116871
+        isPublic: 1
+      - name: mus_date_fight
+        id: 35
+        assetGuid: 
+        comment: 
+        length: 34284
+        isPublic: 1
+      - name: mus_date_tense
+        id: 36
+        assetGuid: 
+        comment: 
+        length: 25615
+        isPublic: 1
+      - name: mus_deeploop2
+        id: 37
+        assetGuid: 
+        comment: 
+        length: 6355
+        isPublic: 1
+      - name: mus_disturbing
+        id: 38
+        assetGuid: 
+        comment: 
+        length: 16803
+        isPublic: 1
+      - name: mus_dogappear
+        id: 39
+        assetGuid: 
+        comment: 
+        length: 3011
+        isPublic: 1
+      - name: mus_dogmeander
+        id: 40
+        assetGuid: 
+        comment: 
+        length: 7309
+        isPublic: 1
+      - name: mus_dogroom
+        id: 41
+        assetGuid: 
+        comment: 
+        length: 36006
+        isPublic: 1
+      - name: mus_dogshrine_1
+        id: 42
+        assetGuid: 
+        comment: 
+        length: 48001
+        isPublic: 1
+      - name: mus_dogshrine_2
+        id: 43
+        assetGuid: 
+        comment: 
+        length: 18014
+        isPublic: 1
+      - name: mus_dogsong
+        id: 44
+        assetGuid: 
+        comment: 
+        length: 36317
+        isPublic: 1
+      - name: mus_dontgiveup
+        id: 45
+        assetGuid: 
+        comment: 
+        length: 120125
+        isPublic: 1
+      - name: mus_doorclose
+        id: 46
+        assetGuid: 
+        comment: 
+        length: 764
+        isPublic: 1
+      - name: mus_dooropen
+        id: 47
+        assetGuid: 
+        comment: 
+        length: 436
+        isPublic: 1
+      - name: mus_drone
+        id: 48
+        assetGuid: 
+        comment: 
+        length: 1922
+        isPublic: 1
+      - name: mus_dummybattle
+        id: 49
+        assetGuid: 
+        comment: 
+        length: 145921
+        isPublic: 1
+      - name: mus_dununnn
+        id: 50
+        assetGuid: 
+        comment: 
+        length: 1319
+        isPublic: 1
+      - name: mus_elevator
+        id: 51
+        assetGuid: 
+        comment: 
+        length: 5147
+        isPublic: 1
+      - name: mus_elevator_last
+        id: 52
+        assetGuid: 
+        comment: 
+        length: 18870
+        isPublic: 1
+      - name: mus_endarea_parta
+        id: 53
+        assetGuid: 
+        comment: 
+        length: 180011
+        isPublic: 1
+      - name: mus_endarea_partb
+        id: 54
+        assetGuid: 
+        comment: 
+        length: 180002
+        isPublic: 1
+      - name: mus_endingexcerpt1
+        id: 55
+        assetGuid: 
+        comment: 
+        length: 28808
+        isPublic: 1
+      - name: mus_endingexcerpt2
+        id: 56
+        assetGuid: 
+        comment: 
+        length: 57600
+        isPublic: 1
+      - name: mus_express_myself
+        id: 57
+        assetGuid: 
+        comment: 
+        length: 135235
+        isPublic: 1
+      - name: mus_f_6s_1
+        id: 58
+        assetGuid: 
+        comment: 
+        length: 15159
+        isPublic: 1
+      - name: mus_f_6s_2
+        id: 59
+        assetGuid: 
+        comment: 
+        length: 30313
+        isPublic: 1
+      - name: mus_f_6s_3
+        id: 60
+        assetGuid: 
+        comment: 
+        length: 15164
+        isPublic: 1
+      - name: mus_f_6s_4
+        id: 61
+        assetGuid: 
+        comment: 
+        length: 30316
+        isPublic: 1
+      - name: mus_f_6s_5
+        id: 62
+        assetGuid: 
+        comment: 
+        length: 30316
+        isPublic: 1
+      - name: mus_f_6s_6
+        id: 63
+        assetGuid: 
+        comment: 
+        length: 15158
+        isPublic: 1
+      - name: mus_f_alarm
+        id: 64
+        assetGuid: 
+        comment: 
+        length: 5057
+        isPublic: 1
+      - name: mus_f_destroyed
+        id: 65
+        assetGuid: 
+        comment: 
+        length: 5305
+        isPublic: 1
+      - name: mus_f_destroyed2
+        id: 66
+        assetGuid: 
+        comment: 
+        length: 5305
+        isPublic: 1
+      - name: mus_f_destroyed3
+        id: 67
+        assetGuid: 
+        comment: 
+        length: 2652
+        isPublic: 1
+      - name: mus_f_finale_1
+        id: 68
+        assetGuid: 
+        comment: 
+        length: 11385
+        isPublic: 1
+      - name: mus_f_finale_1_l
+        id: 69
+        assetGuid: 
+        comment: 
+        length: 21482
+        isPublic: 1
+      - name: mus_f_finale_2
+        id: 70
+        assetGuid: 
+        comment: 
+        length: 41707
+        isPublic: 1
+      - name: mus_f_finale_3
+        id: 71
+        assetGuid: 
+        comment: 
+        length: 60633
+        isPublic: 1
+      - name: mus_f_intro
+        id: 72
+        assetGuid: 
+        comment: 
+        length: 16290
+        isPublic: 1
+      - name: mus_f_newlaugh
+        id: 73
+        assetGuid: 
+        comment: 
+        length: 2793
+        isPublic: 1
+      - name: mus_f_newlaugh_low
+        id: 74
+        assetGuid: 
+        comment: 
+        length: 6381
+        isPublic: 1
+      - name: mus_f_part1
+        id: 75
+        assetGuid: 
+        comment: 
+        length: 30316
+        isPublic: 1
+      - name: mus_f_part2
+        id: 76
+        assetGuid: 
+        comment: 
+        length: 27791
+        isPublic: 1
+      - name: mus_f_part3
+        id: 77
+        assetGuid: 
+        comment: 
+        length: 25273
+        isPublic: 1
+      - name: mus_f_saved
+        id: 78
+        assetGuid: 
+        comment: 
+        length: 6648
+        isPublic: 1
+      - name: mus_f_wind1
+        id: 79
+        assetGuid: 
+        comment: 
+        length: 27438
+        isPublic: 1
+      - name: mus_f_wind2
+        id: 80
+        assetGuid: 
+        comment: 
+        length: 20379
+        isPublic: 1
+      - name: mus_fallendown2
+        id: 81
+        assetGuid: 
+        comment: 
+        length: 150550
+        isPublic: 1
+      - name: mus_fearsting
+        id: 82
+        assetGuid: 
+        comment: 
+        length: 960
+        isPublic: 1
+      - name: mus_flowey
+        id: 83
+        assetGuid: 
+        comment: 
+        length: 23238
+        isPublic: 1
+      - name: mus_gameover
+        id: 84
+        assetGuid: 
+        comment: 
+        length: 46357
+        isPublic: 1
+      - name: mus_ghostbattle
+        id: 85
+        assetGuid: 
+        comment: 
+        length: 51197
+        isPublic: 1
+      - name: mus_harpnoise
+        id: 86
+        assetGuid: 
+        comment: 
+        length: 3490
+        isPublic: 1
+      - name: mus_hereweare
+        id: 87
+        assetGuid: 
+        comment: 
+        length: 124959
+        isPublic: 1
+      - name: mus_hotel
+        id: 88
+        assetGuid: 
+        comment: 
+        length: 82583
+        isPublic: 1
+      - name: mus_hotel_battle
+        id: 89
+        assetGuid: 
+        comment: 
+        length: 60473
+        isPublic: 1
+      - name: mus_house1
+        id: 90
+        assetGuid: 
+        comment: 
+        length: 123014
+        isPublic: 1
+      - name: mus_house2
+        id: 91
+        assetGuid: 
+        comment: 
+        length: 123012
+        isPublic: 1
+      - name: mus_intronoise
+        id: 92
+        assetGuid: 
+        comment: 
+        length: 2842
+        isPublic: 1
+      - name: mus_kingdescription
+        id: 93
+        assetGuid: 
+        comment: 
+        length: 64015
+        isPublic: 1
+      - name: mus_lab
+        id: 94
+        assetGuid: 
+        comment: 
+        length: 84440
+        isPublic: 1
+      - name: mus_leave
+        id: 95
+        assetGuid: 
+        comment: 
+        length: 101658
+        isPublic: 1
+      - name: mus_menu0
+        id: 96
+        assetGuid: 
+        comment: 
+        length: 32021
+        isPublic: 1
+      - name: mus_menu1
+        id: 97
+        assetGuid: 
+        comment: 
+        length: 32010
+        isPublic: 1
+      - name: mus_menu2
+        id: 98
+        assetGuid: 
+        comment: 
+        length: 32013
+        isPublic: 1
+      - name: mus_menu3
+        id: 99
+        assetGuid: 
+        comment: 
+        length: 32010
+        isPublic: 1
+      - name: mus_menu4
+        id: 100
+        assetGuid: 
+        comment: 
+        length: 32013
+        isPublic: 1
+      - name: mus_menu5
+        id: 101
+        assetGuid: 
+        comment: 
+        length: 32013
+        isPublic: 1
+      - name: mus_menu6
+        id: 102
+        assetGuid: 
+        comment: 
+        length: 31997
+        isPublic: 1
+      - name: mus_mett_applause
+        id: 103
+        assetGuid: 
+        comment: 
+        length: 6488
+        isPublic: 1
+      - name: mus_mett_cheer
+        id: 104
+        assetGuid: 
+        comment: 
+        length: 3671
+        isPublic: 1
+      - name: mus_mettafly
+        id: 105
+        assetGuid: 
+        comment: 
+        length: 7623
+        isPublic: 1
+      - name: mus_mettaton_ex
+        id: 106
+        assetGuid: 
+        comment: 
+        length: 132979
+        isPublic: 1
+      - name: mus_mettaton_neo
+        id: 107
+        assetGuid: 
+        comment: 
+        length: 26485
+        isPublic: 1
+      - name: mus_mettaton_pretransform
+        id: 108
+        assetGuid: 
+        comment: 
+        length: 16552
+        isPublic: 1
+      - name: mus_mettatonbattle
+        id: 109
+        assetGuid: 
+        comment: 
+        length: 62085
+        isPublic: 1
+      - name: mus_mettmusical1
+        id: 110
+        assetGuid: 
+        comment: 
+        length: 18014
+        isPublic: 1
+      - name: mus_mettmusical2
+        id: 111
+        assetGuid: 
+        comment: 
+        length: 18014
+        isPublic: 1
+      - name: mus_mettmusical3
+        id: 112
+        assetGuid: 
+        comment: 
+        length: 18014
+        isPublic: 1
+      - name: mus_mettmusical4
+        id: 113
+        assetGuid: 
+        comment: 
+        length: 20011
+        isPublic: 1
+      - name: mus_mettsad
+        id: 114
+        assetGuid: 
+        comment: 
+        length: 104694
+        isPublic: 1
+      - name: mus_mode
+        id: 115
+        assetGuid: 
+        comment: 
+        length: 2500
+        isPublic: 1
+      - name: mus_mtgameshow
+        id: 116
+        assetGuid: 
+        comment: 
+        length: 45199
+        isPublic: 1
+      - name: mus_muscle
+        id: 117
+        assetGuid: 
+        comment: 
+        length: 22505
+        isPublic: 1
+      - name: mus_musicbox
+        id: 118
+        assetGuid: 
+        comment: 
+        length: 72012
+        isPublic: 1
+      - name: mus_myemeow
+        id: 119
+        assetGuid: 
+        comment: 
+        length: 703
+        isPublic: 1
+      - name: mus_mysteriousroom2
+        id: 120
+        assetGuid: 
+        comment: 
+        length: 16728
+        isPublic: 1
+      - name: mus_mystery
+        id: 121
+        assetGuid: 
+        comment: 
+        length: 42987
+        isPublic: 1
+      - name: mus_napstachords
+        id: 122
+        assetGuid: 
+        comment: 
+        length: 42877
+        isPublic: 1
+      - name: mus_napstahouse
+        id: 123
+        assetGuid: 
+        comment: 
+        length: 38787
+        isPublic: 1
+      - name: mus_news
+        id: 124
+        assetGuid: 
+        comment: 
+        length: 15666
+        isPublic: 1
+      - name: mus_news_battle
+        id: 125
+        assetGuid: 
+        comment: 
+        length: 45334
+        isPublic: 1
+      - name: mus_ohyes
+        id: 126
+        assetGuid: 
+        comment: 
+        length: 4273
+        isPublic: 1
+      - name: mus_oogloop
+        id: 127
+        assetGuid: 
+        comment: 
+        length: 13413
+        isPublic: 1
+      - name: mus_operatile
+        id: 128
+        assetGuid: 
+        comment: 
+        length: 32863
+        isPublic: 1
+      - name: mus_options_fall
+        id: 129
+        assetGuid: 
+        comment: 
+        length: 54870
+        isPublic: 1
+      - name: mus_options_summer
+        id: 130
+        assetGuid: 
+        comment: 
+        length: 34001
+        isPublic: 1
+      - name: mus_options_winter
+        id: 131
+        assetGuid: 
+        comment: 
+        length: 13727
+        isPublic: 1
+      - name: mus_papyrus
+        id: 132
+        assetGuid: 
+        comment: 
+        length: 32013
+        isPublic: 1
+      - name: mus_papyrusboss
+        id: 133
+        assetGuid: 
+        comment: 
+        length: 57685
+        isPublic: 1
+      - name: mus_piano
+        id: 134
+        assetGuid: 
+        comment: 
+        length: 25732
+        isPublic: 1
+      - name: mus_prebattle1
+        id: 135
+        assetGuid: 
+        comment: 
+        length: 10492
+        isPublic: 1
+      - name: mus_predummy
+        id: 136
+        assetGuid: 
+        comment: 
+        length: 6915
+        isPublic: 1
+      - name: mus_race
+        id: 137
+        assetGuid: 
+        comment: 
+        length: 41617
+        isPublic: 1
+      - name: mus_rain
+        id: 138
+        assetGuid: 
+        comment: 
+        length: 8573
+        isPublic: 1
+      - name: mus_rain_deep
+        id: 139
+        assetGuid: 
+        comment: 
+        length: 8573
+        isPublic: 1
+      - name: mus_repeat_1
+        id: 140
+        assetGuid: 
+        comment: 
+        length: 5053
+        isPublic: 1
+      - name: mus_repeat_2
+        id: 141
+        assetGuid: 
+        comment: 
+        length: 5053
+        isPublic: 1
+      - name: mus_reunited
+        id: 142
+        assetGuid: 
+        comment: 
+        length: 282480
+        isPublic: 1
+      - name: mus_rimshot
+        id: 143
+        assetGuid: 
+        comment: 
+        length: 1673
+        isPublic: 1
+      - name: mus_ruins
+        id: 144
+        assetGuid: 
+        comment: 
+        length: 91313
+        isPublic: 1
+      - name: mus_ruinspiano
+        id: 145
+        assetGuid: 
+        comment: 
+        length: 69344
+        isPublic: 1
+      - name: mus_sansdate
+        id: 146
+        assetGuid: 
+        comment: 
+        length: 170006
+        isPublic: 1
+      - name: mus_sfx_a_grab
+        id: 147
+        assetGuid: 
+        comment: 
+        length: 869
+        isPublic: 1
+      - name: mus_sfx_chainsaw
+        id: 148
+        assetGuid: 
+        comment: 
+        length: 3449
+        isPublic: 1
+      - name: mus_sfx_hypergoner_charge
+        id: 149
+        assetGuid: 
+        comment: 
+        length: 12940
+        isPublic: 1
+      - name: mus_sfx_hypergoner_laugh
+        id: 150
+        assetGuid: 
+        comment: 
+        length: 3243
+        isPublic: 1
+      - name: mus_sfx_rainbowbeam_hold
+        id: 151
+        assetGuid: 
+        comment: 
+        length: 1480
+        isPublic: 1
+      - name: mus_shop
+        id: 152
+        assetGuid: 
+        comment: 
+        length: 49552
+        isPublic: 1
+      - name: mus_sigh_of_dog
+        id: 153
+        assetGuid: 
+        comment: 
+        length: 29692
+        isPublic: 1
+      - name: mus_silence
+        id: 154
+        assetGuid: 
+        comment: 
+        length: 105
+        isPublic: 1
+      - name: mus_smallshock
+        id: 155
+        assetGuid: 
+        comment: 
+        length: 14130
+        isPublic: 1
+      - name: mus_smile
+        id: 156
+        assetGuid: 
+        comment: 
+        length: 79126
+        isPublic: 1
+      - name: mus_snoresymphony
+        id: 157
+        assetGuid: 
+        comment: 
+        length: 35542
+        isPublic: 1
+      - name: mus_snowwalk
+        id: 158
+        assetGuid: 
+        comment: 
+        length: 11762
+        isPublic: 1
+      - name: mus_snowy
+        id: 159
+        assetGuid: 
+        comment: 
+        length: 102302
+        isPublic: 1
+      - name: mus_spider
+        id: 160
+        assetGuid: 
+        comment: 
+        length: 100176
+        isPublic: 1
+      - name: mus_spoopy
+        id: 161
+        assetGuid: 
+        comment: 
+        length: 23635
+        isPublic: 1
+      - name: mus_spoopy_holiday
+        id: 162
+        assetGuid: 
+        comment: 
+        length: 11589
+        isPublic: 1
+      - name: mus_spoopy_wave
+        id: 163
+        assetGuid: 
+        comment: 
+        length: 23623
+        isPublic: 1
+      - name: mus_st_happytown
+        id: 164
+        assetGuid: 
+        comment: 
+        length: 1322
+        isPublic: 1
+      - name: mus_st_him
+        id: 165
+        assetGuid: 
+        comment: 
+        length: 17486
+        isPublic: 1
+      - name: mus_st_meatfactory
+        id: 166
+        assetGuid: 
+        comment: 
+        length: 1731
+        isPublic: 1
+      - name: mus_st_troubledingle
+        id: 167
+        assetGuid: 
+        comment: 
+        length: 1420
+        isPublic: 1
+      - name: mus_star
+        id: 168
+        assetGuid: 
+        comment: 
+        length: 45715
+        isPublic: 1
+      - name: mus_sticksnap
+        id: 169
+        assetGuid: 
+        comment: 
+        length: 1722
+        isPublic: 1
+      - name: mus_story
+        id: 170
+        assetGuid: 
+        comment: 
+        length: 80017
+        isPublic: 1
+      - name: mus_story_stuck
+        id: 171
+        assetGuid: 
+        comment: 
+        length: 69
+        isPublic: 1
+      - name: mus_temshop
+        id: 172
+        assetGuid: 
+        comment: 
+        length: 40211
+        isPublic: 1
+      - name: mus_temvillage
+        id: 173
+        assetGuid: 
+        comment: 
+        length: 57145
+        isPublic: 1
+      - name: mus_tension
+        id: 174
+        assetGuid: 
+        comment: 
+        length: 6510
+        isPublic: 1
+      - name: mus_tone2
+        id: 175
+        assetGuid: 
+        comment: 
+        length: 1830
+        isPublic: 1
+      - name: mus_tone3
+        id: 176
+        assetGuid: 
+        comment: 
+        length: 1830
+        isPublic: 1
+      - name: mus_toomuch
+        id: 177
+        assetGuid: 
+        comment: 
+        length: 50028
+        isPublic: 1
+      - name: mus_toriel
+        id: 178
+        assetGuid: 
+        comment: 
+        length: 36292
+        isPublic: 1
+      - name: mus_town
+        id: 179
+        assetGuid: 
+        comment: 
+        length: 75625
+        isPublic: 1
+      - name: mus_tv
+        id: 180
+        assetGuid: 
+        comment: 
+        length: 11450
+        isPublic: 1
+      - name: mus_undyneboss
+        id: 181
+        assetGuid: 
+        comment: 
+        length: 113612
+        isPublic: 1
+      - name: mus_undynefast
+        id: 182
+        assetGuid: 
+        comment: 
+        length: 23040
+        isPublic: 1
+      - name: mus_undynepiano
+        id: 183
+        assetGuid: 
+        comment: 
+        length: 8581
+        isPublic: 1
+      - name: mus_undynescary
+        id: 184
+        assetGuid: 
+        comment: 
+        length: 13736
+        isPublic: 1
+      - name: mus_undynetheme
+        id: 185
+        assetGuid: 
+        comment: 
+        length: 37566
+        isPublic: 1
+      - name: mus_undynetruetheme
+        id: 186
+        assetGuid: 
+        comment: 
+        length: 80640
+        isPublic: 1
+      - name: mus_vsasgore
+        id: 187
+        assetGuid: 
+        comment: 
+        length: 154083
+        isPublic: 1
+      - name: mus_waterfall
+        id: 188
+        assetGuid: 
+        comment: 
+        length: 123499
+        isPublic: 1
+      - name: mus_waterquiet
+        id: 189
+        assetGuid: 
+        comment: 
+        length: 26710
+        isPublic: 1
+      - name: mus_wawa
+        id: 190
+        assetGuid: 
+        comment: 
+        length: 3435
+        isPublic: 1
+      - name: mus_whoopee
+        id: 191
+        assetGuid: 
+        comment: 
+        length: 5548
+        isPublic: 1
+      - name: mus_wind
+        id: 192
+        assetGuid: 
+        comment: 
+        length: 8468
+        isPublic: 1
+      - name: mus_woofenstein
+        id: 193
+        assetGuid: 
+        comment: 
+        length: 17149
+        isPublic: 1
+      - name: mus_woofenstein_loop
+        id: 194
+        assetGuid: 
+        comment: 
+        length: 13718
+        isPublic: 1
+      - name: mus_wrongnumbersong
+        id: 195
+        assetGuid: 
+        comment: 
+        length: 5556
+        isPublic: 1
+      - name: mus_wrongworld
+        id: 196
+        assetGuid: 
+        comment: 
+        length: 57887
+        isPublic: 1
+      - name: mus_x_undyne
+        id: 197
+        assetGuid: 
+        comment: 
+        length: 153600
+        isPublic: 1
+      - name: mus_x_undyne_pre
+        id: 198
+        assetGuid: 
+        comment: 
+        length: 13714
+        isPublic: 1
+      - name: mus_xpart
+        id: 199
+        assetGuid: 
+        comment: 
+        length: 170682
+        isPublic: 1
+      - name: mus_xpart_2
+        id: 200
+        assetGuid: 
+        comment: 
+        length: 106666
+        isPublic: 1
+      - name: mus_xpart_a
+        id: 201
+        assetGuid: 
+        comment: 
+        length: 69339
+        isPublic: 1
+      - name: mus_xpart_b
+        id: 202
+        assetGuid: 
+        comment: 
+        length: 42666
+        isPublic: 1
+      - name: mus_xpart_back
+        id: 203
+        assetGuid: 
+        comment: 
+        length: 17207
+        isPublic: 1
+      - name: mus_yourbestfriend_3
+        id: 204
+        assetGuid: 
+        comment: 
+        length: 29091
+        isPublic: 1
+      - name: mus_z_ending
+        id: 205
+        assetGuid: 
+        comment: 
+        length: 208803
+        isPublic: 1
+      - name: mus_zz_megalovania
+        id: 206
+        assetGuid: 
+        comment: 
+        length: 156010
+        isPublic: 1
+      - name: mus_zzz_c
+        id: 207
+        assetGuid: 
+        comment: 
+        length: 8045
+        isPublic: 1
+      - name: mus_zzz_c2
+        id: 208
+        assetGuid: 
+        comment: 
+        length: 4022
+        isPublic: 1
+      - name: snd_ballchime
+        id: 209
+        assetGuid: 
+        comment: 
+        length: 3160
+        isPublic: 1
+      - name: snd_curtgunshot
+        id: 210
+        assetGuid: 
+        comment: 
+        length: 142
+        isPublic: 1
+      - name: snd_mushroomdance
+        id: 211
+        assetGuid: 
+        comment: 
+        length: 1580
+        isPublic: 1
+      publicCueInfoList:
+      - name: abc_123_a
+        id: 0
+        assetGuid: 
+        comment: 
+        length: 6060
+        isPublic: 1
+      - name: mus_a2
+        id: 1
+        assetGuid: 
+        comment: 
+        length: 14222
+        isPublic: 1
+      - name: mus_alphysfix
+        id: 2
+        assetGuid: 
+        comment: 
+        length: 3641
+        isPublic: 1
+      - name: mus_amalgam
+        id: 3
+        assetGuid: 
+        comment: 
+        length: 80017
+        isPublic: 1
+      - name: mus_ambientwater
+        id: 4
+        assetGuid: 
+        comment: 
+        length: 3014
+        isPublic: 1
+      - name: mus_anothermedium
+        id: 5
+        assetGuid: 
+        comment: 
+        length: 142156
+        isPublic: 1
+      - name: mus_bad
+        id: 6
+        assetGuid: 
+        comment: 
+        length: 998
+        isPublic: 1
+      - name: mus_barrier
+        id: 7
+        assetGuid: 
+        comment: 
+        length: 28387
+        isPublic: 1
+      - name: mus_battle1
+        id: 8
+        assetGuid: 
+        comment: 
+        length: 55083
+        isPublic: 1
+      - name: mus_battle2
+        id: 9
+        assetGuid: 
+        comment: 
+        length: 61715
+        isPublic: 1
+      - name: mus_bergentruckung
+        id: 10
+        assetGuid: 
+        comment: 
+        length: 17160
+        isPublic: 1
+      - name: mus_bgflameA
+        id: 11
+        assetGuid: 
+        comment: 
+        length: 4530
+        isPublic: 1
+      - name: mus_birdnoise
+        id: 12
+        assetGuid: 
+        comment: 
+        length: 26028
+        isPublic: 1
+      - name: mus_birdsong
+        id: 13
+        assetGuid: 
+        comment: 
+        length: 25102
+        isPublic: 1
+      - name: mus_boss1
+        id: 14
+        assetGuid: 
+        comment: 
+        length: 108454
+        isPublic: 1
+      - name: mus_cast_1
+        id: 15
+        assetGuid: 
+        comment: 
+        length: 35657
+        isPublic: 1
+      - name: mus_cast_2
+        id: 16
+        assetGuid: 
+        comment: 
+        length: 19200
+        isPublic: 1
+      - name: mus_cast_3
+        id: 17
+        assetGuid: 
+        comment: 
+        length: 35658
+        isPublic: 1
+      - name: mus_cast_4
+        id: 18
+        assetGuid: 
+        comment: 
+        length: 49880
+        isPublic: 1
+      - name: mus_cast_5
+        id: 19
+        assetGuid: 
+        comment: 
+        length: 71286
+        isPublic: 1
+      - name: mus_cast_6
+        id: 20
+        assetGuid: 
+        comment: 
+        length: 21819
+        isPublic: 1
+      - name: mus_cast_7
+        id: 21
+        assetGuid: 
+        comment: 
+        length: 21234
+        isPublic: 1
+      - name: mus_chokedup
+        id: 22
+        assetGuid: 
+        comment: 
+        length: 131208
+        isPublic: 1
+      - name: mus_churchbell
+        id: 23
+        assetGuid: 
+        comment: 
+        length: 9164
+        isPublic: 1
+      - name: mus_computer
+        id: 24
+        assetGuid: 
+        comment: 
+        length: 1256
+        isPublic: 1
+      - name: mus_confession
+        id: 25
+        assetGuid: 
+        comment: 
+        length: 19795
+        isPublic: 1
+      - name: mus_coolbeat
+        id: 26
+        assetGuid: 
+        comment: 
+        length: 1590
+        isPublic: 1
+      - name: mus_core
+        id: 27
+        assetGuid: 
+        comment: 
+        length: 164587
+        isPublic: 1
+      - name: mus_core_ambience
+        id: 28
+        assetGuid: 
+        comment: 
+        length: 5085
+        isPublic: 1
+      - name: mus_coretransition
+        id: 29
+        assetGuid: 
+        comment: 
+        length: 11901
+        isPublic: 1
+      - name: mus_creepy_ambience
+        id: 30
+        assetGuid: 
+        comment: 
+        length: 20591
+        isPublic: 1
+      - name: mus_crickets
+        id: 31
+        assetGuid: 
+        comment: 
+        length: 39643
+        isPublic: 1
+      - name: mus_cymbal
+        id: 32
+        assetGuid: 
+        comment: 
+        length: 5189
+        isPublic: 1
+      - name: mus_dance_of_dog
+        id: 33
+        assetGuid: 
+        comment: 
+        length: 13736
+        isPublic: 1
+      - name: mus_date
+        id: 34
+        assetGuid: 
+        comment: 
+        length: 116871
+        isPublic: 1
+      - name: mus_date_fight
+        id: 35
+        assetGuid: 
+        comment: 
+        length: 34284
+        isPublic: 1
+      - name: mus_date_tense
+        id: 36
+        assetGuid: 
+        comment: 
+        length: 25615
+        isPublic: 1
+      - name: mus_deeploop2
+        id: 37
+        assetGuid: 
+        comment: 
+        length: 6355
+        isPublic: 1
+      - name: mus_disturbing
+        id: 38
+        assetGuid: 
+        comment: 
+        length: 16803
+        isPublic: 1
+      - name: mus_dogappear
+        id: 39
+        assetGuid: 
+        comment: 
+        length: 3011
+        isPublic: 1
+      - name: mus_dogmeander
+        id: 40
+        assetGuid: 
+        comment: 
+        length: 7309
+        isPublic: 1
+      - name: mus_dogroom
+        id: 41
+        assetGuid: 
+        comment: 
+        length: 36006
+        isPublic: 1
+      - name: mus_dogshrine_1
+        id: 42
+        assetGuid: 
+        comment: 
+        length: 48001
+        isPublic: 1
+      - name: mus_dogshrine_2
+        id: 43
+        assetGuid: 
+        comment: 
+        length: 18014
+        isPublic: 1
+      - name: mus_dogsong
+        id: 44
+        assetGuid: 
+        comment: 
+        length: 36317
+        isPublic: 1
+      - name: mus_dontgiveup
+        id: 45
+        assetGuid: 
+        comment: 
+        length: 120125
+        isPublic: 1
+      - name: mus_doorclose
+        id: 46
+        assetGuid: 
+        comment: 
+        length: 764
+        isPublic: 1
+      - name: mus_dooropen
+        id: 47
+        assetGuid: 
+        comment: 
+        length: 436
+        isPublic: 1
+      - name: mus_drone
+        id: 48
+        assetGuid: 
+        comment: 
+        length: 1922
+        isPublic: 1
+      - name: mus_dummybattle
+        id: 49
+        assetGuid: 
+        comment: 
+        length: 145921
+        isPublic: 1
+      - name: mus_dununnn
+        id: 50
+        assetGuid: 
+        comment: 
+        length: 1319
+        isPublic: 1
+      - name: mus_elevator
+        id: 51
+        assetGuid: 
+        comment: 
+        length: 5147
+        isPublic: 1
+      - name: mus_elevator_last
+        id: 52
+        assetGuid: 
+        comment: 
+        length: 18870
+        isPublic: 1
+      - name: mus_endarea_parta
+        id: 53
+        assetGuid: 
+        comment: 
+        length: 180011
+        isPublic: 1
+      - name: mus_endarea_partb
+        id: 54
+        assetGuid: 
+        comment: 
+        length: 180002
+        isPublic: 1
+      - name: mus_endingexcerpt1
+        id: 55
+        assetGuid: 
+        comment: 
+        length: 28808
+        isPublic: 1
+      - name: mus_endingexcerpt2
+        id: 56
+        assetGuid: 
+        comment: 
+        length: 57600
+        isPublic: 1
+      - name: mus_express_myself
+        id: 57
+        assetGuid: 
+        comment: 
+        length: 135235
+        isPublic: 1
+      - name: mus_f_6s_1
+        id: 58
+        assetGuid: 
+        comment: 
+        length: 15159
+        isPublic: 1
+      - name: mus_f_6s_2
+        id: 59
+        assetGuid: 
+        comment: 
+        length: 30313
+        isPublic: 1
+      - name: mus_f_6s_3
+        id: 60
+        assetGuid: 
+        comment: 
+        length: 15164
+        isPublic: 1
+      - name: mus_f_6s_4
+        id: 61
+        assetGuid: 
+        comment: 
+        length: 30316
+        isPublic: 1
+      - name: mus_f_6s_5
+        id: 62
+        assetGuid: 
+        comment: 
+        length: 30316
+        isPublic: 1
+      - name: mus_f_6s_6
+        id: 63
+        assetGuid: 
+        comment: 
+        length: 15158
+        isPublic: 1
+      - name: mus_f_alarm
+        id: 64
+        assetGuid: 
+        comment: 
+        length: 5057
+        isPublic: 1
+      - name: mus_f_destroyed
+        id: 65
+        assetGuid: 
+        comment: 
+        length: 5305
+        isPublic: 1
+      - name: mus_f_destroyed2
+        id: 66
+        assetGuid: 
+        comment: 
+        length: 5305
+        isPublic: 1
+      - name: mus_f_destroyed3
+        id: 67
+        assetGuid: 
+        comment: 
+        length: 2652
+        isPublic: 1
+      - name: mus_f_finale_1
+        id: 68
+        assetGuid: 
+        comment: 
+        length: 11385
+        isPublic: 1
+      - name: mus_f_finale_1_l
+        id: 69
+        assetGuid: 
+        comment: 
+        length: 21482
+        isPublic: 1
+      - name: mus_f_finale_2
+        id: 70
+        assetGuid: 
+        comment: 
+        length: 41707
+        isPublic: 1
+      - name: mus_f_finale_3
+        id: 71
+        assetGuid: 
+        comment: 
+        length: 60633
+        isPublic: 1
+      - name: mus_f_intro
+        id: 72
+        assetGuid: 
+        comment: 
+        length: 16290
+        isPublic: 1
+      - name: mus_f_newlaugh
+        id: 73
+        assetGuid: 
+        comment: 
+        length: 2793
+        isPublic: 1
+      - name: mus_f_newlaugh_low
+        id: 74
+        assetGuid: 
+        comment: 
+        length: 6381
+        isPublic: 1
+      - name: mus_f_part1
+        id: 75
+        assetGuid: 
+        comment: 
+        length: 30316
+        isPublic: 1
+      - name: mus_f_part2
+        id: 76
+        assetGuid: 
+        comment: 
+        length: 27791
+        isPublic: 1
+      - name: mus_f_part3
+        id: 77
+        assetGuid: 
+        comment: 
+        length: 25273
+        isPublic: 1
+      - name: mus_f_saved
+        id: 78
+        assetGuid: 
+        comment: 
+        length: 6648
+        isPublic: 1
+      - name: mus_f_wind1
+        id: 79
+        assetGuid: 
+        comment: 
+        length: 27438
+        isPublic: 1
+      - name: mus_f_wind2
+        id: 80
+        assetGuid: 
+        comment: 
+        length: 20379
+        isPublic: 1
+      - name: mus_fallendown2
+        id: 81
+        assetGuid: 
+        comment: 
+        length: 150550
+        isPublic: 1
+      - name: mus_fearsting
+        id: 82
+        assetGuid: 
+        comment: 
+        length: 960
+        isPublic: 1
+      - name: mus_flowey
+        id: 83
+        assetGuid: 
+        comment: 
+        length: 23238
+        isPublic: 1
+      - name: mus_gameover
+        id: 84
+        assetGuid: 
+        comment: 
+        length: 46357
+        isPublic: 1
+      - name: mus_ghostbattle
+        id: 85
+        assetGuid: 
+        comment: 
+        length: 51197
+        isPublic: 1
+      - name: mus_harpnoise
+        id: 86
+        assetGuid: 
+        comment: 
+        length: 3490
+        isPublic: 1
+      - name: mus_hereweare
+        id: 87
+        assetGuid: 
+        comment: 
+        length: 124959
+        isPublic: 1
+      - name: mus_hotel
+        id: 88
+        assetGuid: 
+        comment: 
+        length: 82583
+        isPublic: 1
+      - name: mus_hotel_battle
+        id: 89
+        assetGuid: 
+        comment: 
+        length: 60473
+        isPublic: 1
+      - name: mus_house1
+        id: 90
+        assetGuid: 
+        comment: 
+        length: 123014
+        isPublic: 1
+      - name: mus_house2
+        id: 91
+        assetGuid: 
+        comment: 
+        length: 123012
+        isPublic: 1
+      - name: mus_intronoise
+        id: 92
+        assetGuid: 
+        comment: 
+        length: 2842
+        isPublic: 1
+      - name: mus_kingdescription
+        id: 93
+        assetGuid: 
+        comment: 
+        length: 64015
+        isPublic: 1
+      - name: mus_lab
+        id: 94
+        assetGuid: 
+        comment: 
+        length: 84440
+        isPublic: 1
+      - name: mus_leave
+        id: 95
+        assetGuid: 
+        comment: 
+        length: 101658
+        isPublic: 1
+      - name: mus_menu0
+        id: 96
+        assetGuid: 
+        comment: 
+        length: 32021
+        isPublic: 1
+      - name: mus_menu1
+        id: 97
+        assetGuid: 
+        comment: 
+        length: 32010
+        isPublic: 1
+      - name: mus_menu2
+        id: 98
+        assetGuid: 
+        comment: 
+        length: 32013
+        isPublic: 1
+      - name: mus_menu3
+        id: 99
+        assetGuid: 
+        comment: 
+        length: 32010
+        isPublic: 1
+      - name: mus_menu4
+        id: 100
+        assetGuid: 
+        comment: 
+        length: 32013
+        isPublic: 1
+      - name: mus_menu5
+        id: 101
+        assetGuid: 
+        comment: 
+        length: 32013
+        isPublic: 1
+      - name: mus_menu6
+        id: 102
+        assetGuid: 
+        comment: 
+        length: 31997
+        isPublic: 1
+      - name: mus_mett_applause
+        id: 103
+        assetGuid: 
+        comment: 
+        length: 6488
+        isPublic: 1
+      - name: mus_mett_cheer
+        id: 104
+        assetGuid: 
+        comment: 
+        length: 3671
+        isPublic: 1
+      - name: mus_mettafly
+        id: 105
+        assetGuid: 
+        comment: 
+        length: 7623
+        isPublic: 1
+      - name: mus_mettaton_ex
+        id: 106
+        assetGuid: 
+        comment: 
+        length: 132979
+        isPublic: 1
+      - name: mus_mettaton_neo
+        id: 107
+        assetGuid: 
+        comment: 
+        length: 26485
+        isPublic: 1
+      - name: mus_mettaton_pretransform
+        id: 108
+        assetGuid: 
+        comment: 
+        length: 16552
+        isPublic: 1
+      - name: mus_mettatonbattle
+        id: 109
+        assetGuid: 
+        comment: 
+        length: 62085
+        isPublic: 1
+      - name: mus_mettmusical1
+        id: 110
+        assetGuid: 
+        comment: 
+        length: 18014
+        isPublic: 1
+      - name: mus_mettmusical2
+        id: 111
+        assetGuid: 
+        comment: 
+        length: 18014
+        isPublic: 1
+      - name: mus_mettmusical3
+        id: 112
+        assetGuid: 
+        comment: 
+        length: 18014
+        isPublic: 1
+      - name: mus_mettmusical4
+        id: 113
+        assetGuid: 
+        comment: 
+        length: 20011
+        isPublic: 1
+      - name: mus_mettsad
+        id: 114
+        assetGuid: 
+        comment: 
+        length: 104694
+        isPublic: 1
+      - name: mus_mode
+        id: 115
+        assetGuid: 
+        comment: 
+        length: 2500
+        isPublic: 1
+      - name: mus_mtgameshow
+        id: 116
+        assetGuid: 
+        comment: 
+        length: 45199
+        isPublic: 1
+      - name: mus_muscle
+        id: 117
+        assetGuid: 
+        comment: 
+        length: 22505
+        isPublic: 1
+      - name: mus_musicbox
+        id: 118
+        assetGuid: 
+        comment: 
+        length: 72012
+        isPublic: 1
+      - name: mus_myemeow
+        id: 119
+        assetGuid: 
+        comment: 
+        length: 703
+        isPublic: 1
+      - name: mus_mysteriousroom2
+        id: 120
+        assetGuid: 
+        comment: 
+        length: 16728
+        isPublic: 1
+      - name: mus_mystery
+        id: 121
+        assetGuid: 
+        comment: 
+        length: 42987
+        isPublic: 1
+      - name: mus_napstachords
+        id: 122
+        assetGuid: 
+        comment: 
+        length: 42877
+        isPublic: 1
+      - name: mus_napstahouse
+        id: 123
+        assetGuid: 
+        comment: 
+        length: 38787
+        isPublic: 1
+      - name: mus_news
+        id: 124
+        assetGuid: 
+        comment: 
+        length: 15666
+        isPublic: 1
+      - name: mus_news_battle
+        id: 125
+        assetGuid: 
+        comment: 
+        length: 45334
+        isPublic: 1
+      - name: mus_ohyes
+        id: 126
+        assetGuid: 
+        comment: 
+        length: 4273
+        isPublic: 1
+      - name: mus_oogloop
+        id: 127
+        assetGuid: 
+        comment: 
+        length: 13413
+        isPublic: 1
+      - name: mus_operatile
+        id: 128
+        assetGuid: 
+        comment: 
+        length: 32863
+        isPublic: 1
+      - name: mus_options_fall
+        id: 129
+        assetGuid: 
+        comment: 
+        length: 54870
+        isPublic: 1
+      - name: mus_options_summer
+        id: 130
+        assetGuid: 
+        comment: 
+        length: 34001
+        isPublic: 1
+      - name: mus_options_winter
+        id: 131
+        assetGuid: 
+        comment: 
+        length: 13727
+        isPublic: 1
+      - name: mus_papyrus
+        id: 132
+        assetGuid: 
+        comment: 
+        length: 32013
+        isPublic: 1
+      - name: mus_papyrusboss
+        id: 133
+        assetGuid: 
+        comment: 
+        length: 57685
+        isPublic: 1
+      - name: mus_piano
+        id: 134
+        assetGuid: 
+        comment: 
+        length: 25732
+        isPublic: 1
+      - name: mus_prebattle1
+        id: 135
+        assetGuid: 
+        comment: 
+        length: 10492
+        isPublic: 1
+      - name: mus_predummy
+        id: 136
+        assetGuid: 
+        comment: 
+        length: 6915
+        isPublic: 1
+      - name: mus_race
+        id: 137
+        assetGuid: 
+        comment: 
+        length: 41617
+        isPublic: 1
+      - name: mus_rain
+        id: 138
+        assetGuid: 
+        comment: 
+        length: 8573
+        isPublic: 1
+      - name: mus_rain_deep
+        id: 139
+        assetGuid: 
+        comment: 
+        length: 8573
+        isPublic: 1
+      - name: mus_repeat_1
+        id: 140
+        assetGuid: 
+        comment: 
+        length: 5053
+        isPublic: 1
+      - name: mus_repeat_2
+        id: 141
+        assetGuid: 
+        comment: 
+        length: 5053
+        isPublic: 1
+      - name: mus_reunited
+        id: 142
+        assetGuid: 
+        comment: 
+        length: 282480
+        isPublic: 1
+      - name: mus_rimshot
+        id: 143
+        assetGuid: 
+        comment: 
+        length: 1673
+        isPublic: 1
+      - name: mus_ruins
+        id: 144
+        assetGuid: 
+        comment: 
+        length: 91313
+        isPublic: 1
+      - name: mus_ruinspiano
+        id: 145
+        assetGuid: 
+        comment: 
+        length: 69344
+        isPublic: 1
+      - name: mus_sansdate
+        id: 146
+        assetGuid: 
+        comment: 
+        length: 170006
+        isPublic: 1
+      - name: mus_sfx_a_grab
+        id: 147
+        assetGuid: 
+        comment: 
+        length: 869
+        isPublic: 1
+      - name: mus_sfx_chainsaw
+        id: 148
+        assetGuid: 
+        comment: 
+        length: 3449
+        isPublic: 1
+      - name: mus_sfx_hypergoner_charge
+        id: 149
+        assetGuid: 
+        comment: 
+        length: 12940
+        isPublic: 1
+      - name: mus_sfx_hypergoner_laugh
+        id: 150
+        assetGuid: 
+        comment: 
+        length: 3243
+        isPublic: 1
+      - name: mus_sfx_rainbowbeam_hold
+        id: 151
+        assetGuid: 
+        comment: 
+        length: 1480
+        isPublic: 1
+      - name: mus_shop
+        id: 152
+        assetGuid: 
+        comment: 
+        length: 49552
+        isPublic: 1
+      - name: mus_sigh_of_dog
+        id: 153
+        assetGuid: 
+        comment: 
+        length: 29692
+        isPublic: 1
+      - name: mus_silence
+        id: 154
+        assetGuid: 
+        comment: 
+        length: 105
+        isPublic: 1
+      - name: mus_smallshock
+        id: 155
+        assetGuid: 
+        comment: 
+        length: 14130
+        isPublic: 1
+      - name: mus_smile
+        id: 156
+        assetGuid: 
+        comment: 
+        length: 79126
+        isPublic: 1
+      - name: mus_snoresymphony
+        id: 157
+        assetGuid: 
+        comment: 
+        length: 35542
+        isPublic: 1
+      - name: mus_snowwalk
+        id: 158
+        assetGuid: 
+        comment: 
+        length: 11762
+        isPublic: 1
+      - name: mus_snowy
+        id: 159
+        assetGuid: 
+        comment: 
+        length: 102302
+        isPublic: 1
+      - name: mus_spider
+        id: 160
+        assetGuid: 
+        comment: 
+        length: 100176
+        isPublic: 1
+      - name: mus_spoopy
+        id: 161
+        assetGuid: 
+        comment: 
+        length: 23635
+        isPublic: 1
+      - name: mus_spoopy_holiday
+        id: 162
+        assetGuid: 
+        comment: 
+        length: 11589
+        isPublic: 1
+      - name: mus_spoopy_wave
+        id: 163
+        assetGuid: 
+        comment: 
+        length: 23623
+        isPublic: 1
+      - name: mus_st_happytown
+        id: 164
+        assetGuid: 
+        comment: 
+        length: 1322
+        isPublic: 1
+      - name: mus_st_him
+        id: 165
+        assetGuid: 
+        comment: 
+        length: 17486
+        isPublic: 1
+      - name: mus_st_meatfactory
+        id: 166
+        assetGuid: 
+        comment: 
+        length: 1731
+        isPublic: 1
+      - name: mus_st_troubledingle
+        id: 167
+        assetGuid: 
+        comment: 
+        length: 1420
+        isPublic: 1
+      - name: mus_star
+        id: 168
+        assetGuid: 
+        comment: 
+        length: 45715
+        isPublic: 1
+      - name: mus_sticksnap
+        id: 169
+        assetGuid: 
+        comment: 
+        length: 1722
+        isPublic: 1
+      - name: mus_story
+        id: 170
+        assetGuid: 
+        comment: 
+        length: 80017
+        isPublic: 1
+      - name: mus_story_stuck
+        id: 171
+        assetGuid: 
+        comment: 
+        length: 69
+        isPublic: 1
+      - name: mus_temshop
+        id: 172
+        assetGuid: 
+        comment: 
+        length: 40211
+        isPublic: 1
+      - name: mus_temvillage
+        id: 173
+        assetGuid: 
+        comment: 
+        length: 57145
+        isPublic: 1
+      - name: mus_tension
+        id: 174
+        assetGuid: 
+        comment: 
+        length: 6510
+        isPublic: 1
+      - name: mus_tone2
+        id: 175
+        assetGuid: 
+        comment: 
+        length: 1830
+        isPublic: 1
+      - name: mus_tone3
+        id: 176
+        assetGuid: 
+        comment: 
+        length: 1830
+        isPublic: 1
+      - name: mus_toomuch
+        id: 177
+        assetGuid: 
+        comment: 
+        length: 50028
+        isPublic: 1
+      - name: mus_toriel
+        id: 178
+        assetGuid: 
+        comment: 
+        length: 36292
+        isPublic: 1
+      - name: mus_town
+        id: 179
+        assetGuid: 
+        comment: 
+        length: 75625
+        isPublic: 1
+      - name: mus_tv
+        id: 180
+        assetGuid: 
+        comment: 
+        length: 11450
+        isPublic: 1
+      - name: mus_undyneboss
+        id: 181
+        assetGuid: 
+        comment: 
+        length: 113612
+        isPublic: 1
+      - name: mus_undynefast
+        id: 182
+        assetGuid: 
+        comment: 
+        length: 23040
+        isPublic: 1
+      - name: mus_undynepiano
+        id: 183
+        assetGuid: 
+        comment: 
+        length: 8581
+        isPublic: 1
+      - name: mus_undynescary
+        id: 184
+        assetGuid: 
+        comment: 
+        length: 13736
+        isPublic: 1
+      - name: mus_undynetheme
+        id: 185
+        assetGuid: 
+        comment: 
+        length: 37566
+        isPublic: 1
+      - name: mus_undynetruetheme
+        id: 186
+        assetGuid: 
+        comment: 
+        length: 80640
+        isPublic: 1
+      - name: mus_vsasgore
+        id: 187
+        assetGuid: 
+        comment: 
+        length: 154083
+        isPublic: 1
+      - name: mus_waterfall
+        id: 188
+        assetGuid: 
+        comment: 
+        length: 123499
+        isPublic: 1
+      - name: mus_waterquiet
+        id: 189
+        assetGuid: 
+        comment: 
+        length: 26710
+        isPublic: 1
+      - name: mus_wawa
+        id: 190
+        assetGuid: 
+        comment: 
+        length: 3435
+        isPublic: 1
+      - name: mus_whoopee
+        id: 191
+        assetGuid: 
+        comment: 
+        length: 5548
+        isPublic: 1
+      - name: mus_wind
+        id: 192
+        assetGuid: 
+        comment: 
+        length: 8468
+        isPublic: 1
+      - name: mus_woofenstein
+        id: 193
+        assetGuid: 
+        comment: 
+        length: 17149
+        isPublic: 1
+      - name: mus_woofenstein_loop
+        id: 194
+        assetGuid: 
+        comment: 
+        length: 13718
+        isPublic: 1
+      - name: mus_wrongnumbersong
+        id: 195
+        assetGuid: 
+        comment: 
+        length: 5556
+        isPublic: 1
+      - name: mus_wrongworld
+        id: 196
+        assetGuid: 
+        comment: 
+        length: 57887
+        isPublic: 1
+      - name: mus_x_undyne
+        id: 197
+        assetGuid: 
+        comment: 
+        length: 153600
+        isPublic: 1
+      - name: mus_x_undyne_pre
+        id: 198
+        assetGuid: 
+        comment: 
+        length: 13714
+        isPublic: 1
+      - name: mus_xpart
+        id: 199
+        assetGuid: 
+        comment: 
+        length: 170682
+        isPublic: 1
+      - name: mus_xpart_2
+        id: 200
+        assetGuid: 
+        comment: 
+        length: 106666
+        isPublic: 1
+      - name: mus_xpart_a
+        id: 201
+        assetGuid: 
+        comment: 
+        length: 69339
+        isPublic: 1
+      - name: mus_xpart_b
+        id: 202
+        assetGuid: 
+        comment: 
+        length: 42666
+        isPublic: 1
+      - name: mus_xpart_back
+        id: 203
+        assetGuid: 
+        comment: 
+        length: 17207
+        isPublic: 1
+      - name: mus_yourbestfriend_3
+        id: 204
+        assetGuid: 
+        comment: 
+        length: 29091
+        isPublic: 1
+      - name: mus_z_ending
+        id: 205
+        assetGuid: 
+        comment: 
+        length: 208803
+        isPublic: 1
+      - name: mus_zz_megalovania
+        id: 206
+        assetGuid: 
+        comment: 
+        length: 156010
+        isPublic: 1
+      - name: mus_zzz_c
+        id: 207
+        assetGuid: 
+        comment: 
+        length: 8045
+        isPublic: 1
+      - name: mus_zzz_c2
+        id: 208
+        assetGuid: 
+        comment: 
+        length: 4022
+        isPublic: 1
+      - name: snd_ballchime
+        id: 209
+        assetGuid: 
+        comment: 
+        length: 3160
+        isPublic: 1
+      - name: snd_curtgunshot
+        id: 210
+        assetGuid: 
+        comment: 
+        length: 142
+        isPublic: 1
+      - name: snd_mushroomdance
+        id: 211
+        assetGuid: 
+        comment: 
+        length: 1580
+        isPublic: 1
+  criAtomWindowPrefs: {fileID: 11400000, guid: 992c9cf10109d9c42b07b75cb1ba20ef, type: 2}
+  toolBarButtonStyle:
+    m_Name: toolbarbutton
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: -6675728888473347081, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.76862746, g: 0.76862746, b: 0.76862746, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: -6559566165897956916, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.76862746, g: 0.76862746, b: 0.76862746, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.76862746, g: 0.76862746, b: 0.76862746, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: -4689374610832948062, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.76862746, g: 0.76862746, b: 0.76862746, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: -2590580295915515212, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.76862746, g: 0.76862746, b: 0.76862746, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.76862746, g: 0.76862746, b: 0.76862746, a: 1}
+    m_Border:
+      m_Left: 6
+      m_Right: 6
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 5
+      m_Right: 5
+      m_Top: 2
+      m_Bottom: 2
+    m_Overflow:
+      m_Left: 0
+      m_Right: 1
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_Alignment: 3
+    m_WordWrap: 0
+    m_RichText: 0
+    m_TextClipping: 1
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 20
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  showPrivateCue: 0
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13953, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 800, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Package Manager
+    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 790
+    y: 591
+    width: 1129
+    height: 400
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: -32000
+    y: -31970
+    width: 789
+    height: 918
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData:
+    - dockPosition: 0
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: -101, y: -26}
+      snapCorner: 3
+      id: Tool Settings
+      index: 0
+      layout: 1
+    - dockPosition: 0
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: -141, y: 149}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
+      id: unity-grid-and-snap-toolbar
+      index: 1
+      layout: 1
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: unity-scene-view-toolbar
+      index: 0
+      layout: 1
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
+      id: unity-search-toolbar
+      index: 1
+      layout: 1
+    - dockPosition: 0
+      containerId: overlay-container--left
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: unity-transform-toolbar
+      index: 0
+      layout: 2
+    - dockPosition: 0
+      containerId: overlay-container--left
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 197}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: unity-component-tools
+      index: 1
+      layout: 2
+    - dockPosition: 0
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 67.5, y: 86}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Orientation
+      index: 0
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Light Settings
+      index: 0
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Camera
+      index: 1
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Cloth Constraints
+      index: 2
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Cloth Collisions
+      index: 3
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Navmesh Display
+      index: 4
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Agent Display
+      index: 5
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Obstacle Display
+      index: 6
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Occlusion Culling
+      index: 7
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Physics Debugger
+      index: 8
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Scene Visibility
+      index: 9
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Particles
+      index: 10
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Tilemap
+      index: 11
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Tilemap Palette Helper
+      index: 12
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Open Tile Palette
+      index: 2
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Tilemap Focus
+      index: 3
+      layout: 4
+  m_WindowGUID: 3e7d0292e1956e24094b1930a2a02fb4
+  m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 1
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 337, y: 189.5, z: 0}
+    speed: 2
+    m_Value: {x: 336.99997, y: 189.49998, z: -0.00000045274248}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
+  m_SceneViewState:
+    m_AlwaysRefresh: 0
+    showFog: 1
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
+    xGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
+    yGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    zGrid:
+      m_Fade:
+        m_Target: 1
+        speed: 2
+        m_Value: 1
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 1
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
+  m_Rotation:
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 386.62546
+    speed: 2
+    m_Value: 386.62543
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+    m_SpeedMin: 0.001
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfViewHorizontalOrVertical: 60
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 790
+    y: 73
+    width: 206
+    height: 497
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: ae720000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 98a2ffffc4a3ffffa6a4ffff4ca5ffff08d5ffff0cd5ffff10d5ffff14d5ffff18d5ffff1cd5ffff20d5ffff24d5ffff28d5ffff2cd5ffff30d5ffff34d5ffff0cecffffceecffffd8efffff38f1fffffaf1ffff96f9ffff16fbffff26fbffffea3e0000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 13}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 34d2f88fd4ea28b42a440374065a9347
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 998
+    y: 73
+    width: 321
+    height: 497
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: -176
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12079, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 390, y: 390}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Lighting
+    m_Image: {fileID: -1347227620855488341, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1022
+    y: 73
+    width: 527
+    height: 587
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -294,11 +3602,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2249
-    y: 726.5
-    width: 920
-    height: 250
+    x: -30679
+    y: -31970
+    width: 598
+    height: 497
   m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -312,21 +3623,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Hikanyan_Assets/Script/Audio
     m_Globs: []
+    m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 16
   m_LastFolders:
-  - Assets
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: U:\layout
+  - Assets/Hikanyan_Assets/Script/Audio
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: G:\HighPriorityProjects\Unity\UnderTail
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f4350000
-    m_LastClickedID: 13812
-    m_ExpandedIDs: 00000000f435000000ca9a3b
+    m_SelectedIDs: aa720000
+    m_LastClickedID: 29354
+    m_ExpandedIDs: 00000000ac700000a2720000a672000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -354,7 +3666,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f4350000
+    m_ExpandedIDs: 00000000ac700000a672000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -381,8 +3693,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 0000000000520000c6650000064c00008e47000056460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -398,7 +3710,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 15}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -407,217 +3719,10 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 16
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 207
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 3170
-    y: 332.5
-    width: 284
-    height: 644
-  m_ViewDataDictionary: {fileID: 0}
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_PreviewResizer:
-    m_CachedPref: 160
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
-  m_AssetGUID: 
-  m_InstanceID: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewWindow: {fileID: 0}
---- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 2249
-    y: 332.5
-    width: 227
-    height: 373
-  m_ViewDataDictionary: {fileID: 0}
-  m_SceneHierarchy:
-    m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 42fbffff
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 0
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 2477
-    y: 332.5
-    width: 691
-    height: 373
-  m_ViewDataDictionary: {fileID: 0}
-  m_ShowContextualTools: 0
-  m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
-  m_Gizmos: 1
-  m_OverrideSceneCullingMask: 6917529027641081856
-  m_SceneIsLit: 1
-  m_SceneLighting: 1
-  m_2DMode: 0
-  m_isRotationLocked: 0
-  m_PlayAudio: 0
-  m_AudioPlay: 0
-  m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
-    speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
-  m_RenderMode: 0
-  m_CameraMode:
-    drawMode: 0
-    name: Shaded
-    section: Shading Mode
-  m_ValidateTrueMetals: 0
-  m_DoValidateTrueMetals: 0
-  m_ExposureSliderValue: 0
-  m_SceneViewState:
-    showFog: 1
-    showMaterialUpdate: 0
-    showSkybox: 1
-    showFlares: 1
-    showImageEffects: 1
-    showParticleSystems: 1
-    showVisualEffectGraphs: 1
-  m_Grid:
-    xGrid:
-      m_Fade:
-        m_Target: 0
-        speed: 2
-        m_Value: 0
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
-    yGrid:
-      m_Fade:
-        m_Target: 1
-        speed: 2
-        m_Value: 1
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 1, y: 1}
-    zGrid:
-      m_Fade:
-        m_Target: 0
-        speed: 2
-        m_Value: 0
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
-    m_ShowGrid: 1
-    m_GridAxis: 1
-    m_gridOpacity: 0.5
-  m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-    speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-  m_Size:
-    m_Target: 10
-    speed: 2
-    m_Value: 10
-  m_Ortho:
-    m_Target: 0
-    speed: 2
-    m_Value: 0
-  m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
-    m_SpeedMin: 0.001
-    m_SpeedMax: 2
-    m_EasingEnabled: 1
-    m_EasingDuration: 0.4
-    m_AccelerationEnabled: 1
-    m_FieldOfView: 90
-    m_NearClip: 0.03
-    m_FarClip: 10000
-    m_DynamicClip: 1
-    m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
-  m_LastSceneViewOrtho: 0
-  m_ReplacementShader: {fileID: 0}
-  m_ReplacementString: 
-  m_SceneVisActive: 1
-  m_LastLockedObject: {fileID: 0}
-  m_ViewIsLockedToObject: 0
---- !u!114 &16
+  m_DirectoriesAreaWidth: 110
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -637,36 +3742,39 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 507
-    y: 94
-    width: 1532
-    height: 790
+    x: 790
+    y: 591
+    width: 1129
+    height: 400
   m_ViewDataDictionary: {fileID: 0}
-  m_SerializedViewsNames: []
-  m_SerializedViewsValues: []
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 640, y: 480}
+  m_TargetSize: {x: 674, y: 379}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
-  m_MaximizeOnPlay: 0
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -766
-    m_HBaseRangeMax: 766
-    m_VBaseRangeMin: -395
-    m_VBaseRangeMax: 395
+    m_HBaseRangeMin: -337
+    m_HBaseRangeMax: 337
+    m_VBaseRangeMin: -189.5
+    m_VBaseRangeMax: 189.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -683,30 +3791,30 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
-      width: 1532
-      height: 790
+      y: 21
+      width: 1129
+      height: 379
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 766, y: 395}
+    m_Translation: {x: 564.5, y: 189.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -766
-      y: -395
-      width: 1532
-      height: 790
+      x: -564.5
+      y: -189.5
+      width: 1129
+      height: 379
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1532, y: 790}
+  m_LastWindowPixelSize: {x: 1129, y: 400}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &17
+--- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -714,7 +3822,102 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 820
+    y: 602
+    width: 1099
+    height: 407
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 0
+--- !u!114 &26
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1
+    y: 547
+    width: 1099
+    height: 408
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: -8493509222757572466, guid: 02cf8be17e13fb445b03add7c2ddd4a5, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 02cf8be17e13fb445b03add7c2ddd4a5, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -8493509222757572466, guid: 02cf8be17e13fb445b03add7c2ddd4a5, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &27
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -726,21 +3929,11 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2249
-    y: 726.5
-    width: 920
-    height: 250
+    x: 820
+    y: 601
+    width: 1099
+    height: 408
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13963, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_DontSaveToLayout: 0
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []

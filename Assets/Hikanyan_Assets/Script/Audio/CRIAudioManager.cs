@@ -60,13 +60,13 @@ public class CRIAudioManager : MonoBehaviour
         //_sePlayVolume = setting.SEVolume;
     }
 
-    public void CRIPlayBGM(int index)
+    public void CRIPlayBGM<T>(T index) where T: IAudioInfo
     {
         bool startFlag = false;
         CriAtomSource.Status status = _criAtomSourceBgm.status;
         if ((status == CriAtomSource.Status.Stop) || (status == CriAtomSource.Status.PlayEnd))
         {
-            this._criAtomExPlayback = _criAtomSourceBgm.Play(index);
+            this._criAtomExPlayback = _criAtomSourceBgm.Play((index.GetType() == typeof(int)) ? index.GetInt()  : ((index.GetType() == typeof(string)) ? index.GetString()  : 0);
             startFlag = true;
         }
         if (startFlag == false)
@@ -102,5 +102,11 @@ public class CRIAudioManager : MonoBehaviour
     public void CRIPlaySE(int index)
     {
         _criAtomSourceSe.Play(index);
+    }
+
+    public interface IAudioInfo
+    {
+        string GetString();// ñºëOÇÃéÊìæ
+        int GetInt();// êîÇÃéÊìæ
     }
 }
