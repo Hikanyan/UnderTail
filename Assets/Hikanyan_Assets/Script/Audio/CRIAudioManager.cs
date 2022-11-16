@@ -11,7 +11,7 @@ public class CRIAudioManager : MonoBehaviour
 
     [SerializeField, Range(0f, 1f)] float _bgmPlayVolume = default;
     [SerializeField, Range(0f, 1f)] float _sePlayVolume = default;
-    
+
     CriAtomExPlayback _criAtomExPlayback;
     CriAtomEx.CueInfo _cueInfo;
 
@@ -21,12 +21,12 @@ public class CRIAudioManager : MonoBehaviour
     int _cueIndexID;
     void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             //acf
             string path = Common.streamingAssetsPath + $"/{_streamingAssetsPathACF}.acf";
-            CriAtomEx.RegisterAcf(null,path);
+            CriAtomEx.RegisterAcf(null, path);
 
             //CriAtom
             new GameObject().AddComponent<CriAtom>();
@@ -60,13 +60,13 @@ public class CRIAudioManager : MonoBehaviour
         //_sePlayVolume = setting.SEVolume;
     }
 
-    public void CRIPlayBGM<T>(T index) where T: IAudioInfo
+    public void CRIPlayBGM(int index)
     {
         bool startFlag = false;
         CriAtomSource.Status status = _criAtomSourceBgm.status;
         if ((status == CriAtomSource.Status.Stop) || (status == CriAtomSource.Status.PlayEnd))
         {
-            this._criAtomExPlayback = _criAtomSourceBgm.Play((index.GetType() == typeof(int)) ? index.GetInt()  : ((index.GetType() == typeof(string)) ? index.GetString()  : 0);
+            this._criAtomExPlayback = _criAtomSourceBgm.Play(index);
             startFlag = true;
         }
         if (startFlag == false)
@@ -95,18 +95,6 @@ public class CRIAudioManager : MonoBehaviour
         CRIPlayBGM(index);
     }
 
-    public void CRIPauseAudio(bool isPause)
-    {
-        _criAtomSourceBgm.Pause(isPause);
-    }
-    public void CRIPlaySE(int index)
-    {
-        _criAtomSourceSe.Play(index);
-    }
-
-    public interface IAudioInfo
-    {
-        string GetString();// –¼‘O‚ÌŽæ“¾
-        int GetInt();// ”‚ÌŽæ“¾
-    }
+    public void CRIPauseAudio(bool isPause) => _criAtomSourceBgm.Pause(isPause);
+    public void CRIPlaySE(int index) => _criAtomSourceSe.Play(index);
 }
