@@ -1,0 +1,753 @@
+fileFormatVersion: 2
+guid: df15514ec8c498c44a41324d335533ca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FrontPillar_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 177.77777
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c17778ca00f6e498c7cf6ac8536016
+      internalID: 450747719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 177.77777
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e747e3867c3004dbb144b779bfcd21
+      internalID: 1910716937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 177.77777
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5b6dabd9bad864ab439f87d41f2196
+      internalID: -1520156195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 155.77777
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f350ff59d063649bfd820a0c3a8385
+      internalID: 98422223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 155.77777
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f95d7a70b88d4d4daa17df9030bdc23
+      internalID: 440750339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 155.77777
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6395d0e581659ad46824ac125ae791e6
+      internalID: -1924430433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 133.77777
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307d2e0260be6614881fb455a8020a9c
+      internalID: -456113872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_7
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 133.77777
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9b4661b34ef184ca1be3f25b8933ae
+      internalID: 394211428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 133.77777
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6585e468458da45ae86c1720bab1fc
+      internalID: 1632461332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 111.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3db19edb11a84e4e859cf694edbd4bd
+      internalID: -1753977232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 111.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33be209f01fdccb4892b3f1484104734
+      internalID: 1736092815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_11
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 111.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5c4f3320c33ea4ebd6c4a0c2689994
+      internalID: 1247801745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 89.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9da75182e98334c8875c785dc9fb6f
+      internalID: 591899624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_13
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 89.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e77cc04ac2d4d48a5b4d909de2fe9f
+      internalID: 1076801895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_14
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 89.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec9ba3994f1fca4ca5d0bba7ffac02e
+      internalID: 388687761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050fd34a401f9094dbc7ab7fca32077b
+      internalID: -473767988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 67.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6861ef3a0cb5247a1b1d22305f7495
+      internalID: -1450275359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_17
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 67.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3802be868d502374ab281092a43ff7c3
+      internalID: 1154262561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 45.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd54bd4d5be57e45bb829b1be74a382
+      internalID: -1713114402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_19
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 45.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dfec1a7c5bb4c4fa3aedf83b23ab68
+      internalID: 1120086784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_20
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 45.77778
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9214a5a3206300b47923bd6b1a738a4e
+      internalID: 1404046893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 23.777779
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91340203b30dd144ebde87d7bf1129fc
+      internalID: 612301443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_22
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 23.777779
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd465e41f850ac4b8e4003ae65d0b93
+      internalID: 57408424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_23
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 23.777779
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de4a07179d8c9e42a92f8a057d6e568
+      internalID: -1664803464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1.7777786
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c3242f0d17faf40bde6f35512ae3bc
+      internalID: 336257887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_25
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1.7777786
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eaba31a10fcec24db39729fc45c051c
+      internalID: -1178216855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontPillar_26
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1.7777786
+        width: 22
+        height: 22.222221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd7709d0ace8924dbee624e0b6b580e
+      internalID: 62421089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FrontPillar_21: 612301443
+      FrontPillar_5: -1924430433
+      FrontPillar_0: 450747719
+      FrontPillar_16: -1450275359
+      FrontPillar_25: -1178216855
+      FrontPillar_7: 394211428
+      FrontPillar_10: 1736092815
+      FrontPillar_18: -1713114402
+      FrontPillar_17: 1154262561
+      FrontPillar_24: 336257887
+      FrontPillar_4: 440750339
+      FrontPillar_19: 1120086784
+      FrontPillar_8: 1632461332
+      FrontPillar_20: 1404046893
+      FrontPillar_3: 98422223
+      FrontPillar_14: 388687761
+      FrontPillar_9: -1753977232
+      FrontPillar_11: 1247801745
+      FrontPillar_12: 591899624
+      FrontPillar_22: 57408424
+      FrontPillar_15: -473767988
+      FrontPillar_26: 62421089
+      FrontPillar_2: -1520156195
+      FrontPillar_23: -1664803464
+      FrontPillar_13: 1076801895
+      FrontPillar_6: -456113872
+      FrontPillar_1: 1910716937
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
