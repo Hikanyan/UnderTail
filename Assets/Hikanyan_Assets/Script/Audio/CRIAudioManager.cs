@@ -6,14 +6,17 @@ public class CRIAudioManager : MonoBehaviour
 {
     public static CRIAudioManager instance;
     [SerializeField] string _streamingAssetsPathACF;//.acf
-    [SerializeField] string _cueSheetAll;//.acb
+    [SerializeField] string _cueSheetBGM;//.acb
+    [SerializeField] string _cueSheetSE;//.acb
 
-    [SerializeField, Range(0f, 1f)] float _allPlayVolume = default;
+    [SerializeField, Range(0f, 1f)] float _bgmPlayVolume = default;
+    [SerializeField, Range(0f, 1f)] float _sePlayVolume = default;
 
     CriAtomExPlayback _criAtomExPlayback;
     CriAtomEx.CueInfo _cueInfo;
 
-    CriAtomSource _criAtomSourceAll;
+    CriAtomSource _criAtomSourceBGM;
+    CriAtomSource _criAtomSourceSE;
 
     int _cueIndexID;
     void Awake()
@@ -29,11 +32,11 @@ public class CRIAudioManager : MonoBehaviour
             new GameObject().AddComponent<CriAtom>();
 
             //BGM.acb
-            CriAtom.AddCueSheet(_cueSheetAll, $"{_cueSheetAll}.acb", null, null);
+            CriAtom.AddCueSheet(_cueSheetBGM, $"{_cueSheetBGM}.acb", null, null);
 
             //CriAtomSourceBGM
-            _criAtomSourceAll = gameObject.AddComponent<CriAtomSource>();
-            _criAtomSourceAll.cueSheet = _cueSheetAll;
+            _criAtomSourceBGM = gameObject.AddComponent<CriAtomSource>();
+            _criAtomSourceBGM.cueSheet = _cueSheetBGM;
 
             DontDestroyOnLoad(gameObject);
         }
@@ -55,16 +58,16 @@ public class CRIAudioManager : MonoBehaviour
     public void CRIPlayBGM(int index)
     {
         bool startFlag = false;
-        CriAtomSource.Status status = _criAtomSourceAll.status;
+        CriAtomSource.Status status = _criAtomSourceBGM.status;
         if ((status == CriAtomSource.Status.Stop) || (status == CriAtomSource.Status.PlayEnd))
         {
-            this._criAtomExPlayback = _criAtomSourceAll.Play(index);
+            this._criAtomExPlayback = _criAtomSourceBGM.Play(index);
             startFlag = true;
         }
         if (startFlag == false)
         {
             int cur = this._criAtomExPlayback.GetCurrentBlockIndex();
-            CriAtomExAcb acb = CriAtom.GetAcb(_cueSheetAll);
+            CriAtomExAcb acb = CriAtom.GetAcb(_cueSheetBGM);
             if (acb != null)
             {
                 acb.GetCueInfo(index, out _cueInfo);
@@ -87,6 +90,6 @@ public class CRIAudioManager : MonoBehaviour
         CRIPlayBGM(index);
     }
 
-    public void CRIPauseAudio(bool isPause) => _criAtomSourceAll.Pause(isPause);
-    public void CRIPlaySE(int index) => _criAtomSourceAll.Play(index);
+    public void CRIPauseAudio(bool isPause) => _criAtomSourceBGM.Pause(isPause);
+    public void CRIPlaySE(int index) => _criAtomSourceBGM.Play(index);
 }
