@@ -91,5 +91,16 @@ public class CRIAudioManager : MonoBehaviour
     }
 
     public void CRIPauseAudio(bool isPause) => _criAtomSourceBGM.Pause(isPause);
-    public void CRIPlaySE(int index) => _criAtomSourceBGM.Play(index);
+    public void CRIPlaySE(int index)
+    {
+        this._criAtomExPlayback = _criAtomSourceSE.Play(index);
+    }
+    public void CRILoopSE(int index)
+    {
+        CRIPlaySE(index);
+    }
+    public void CRIStopLoopSE(int index)
+    {
+
+    }
 }
