@@ -33,10 +33,15 @@ public class CRIAudioManager : MonoBehaviour
 
             //BGM.acb
             CriAtom.AddCueSheet(_cueSheetBGM, $"{_cueSheetBGM}.acb", null, null);
+            //SE.acb
+            CriAtom.AddCueSheet(_cueSheetSE, $"{_cueSheetSE}.acb", null, null);
 
             //CriAtomSourceBGM
             _criAtomSourceBGM = gameObject.AddComponent<CriAtomSource>();
             _criAtomSourceBGM.cueSheet = _cueSheetBGM;
+            //CriAtomSourceSE
+            _criAtomSourceSE = gameObject.AddComponent<CriAtomSource>();
+            _criAtomSourceSE.cueSheet = _cueSheetSE;
 
             DontDestroyOnLoad(gameObject);
         }
@@ -101,6 +106,6 @@ public class CRIAudioManager : MonoBehaviour
     }
     public void CRIStopLoopSE(int index)
     {
-
+        
     }
 }
