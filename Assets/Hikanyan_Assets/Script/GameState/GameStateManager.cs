@@ -3,19 +3,6 @@ using UnityEngine;
 
 public class GameStateManager
 {
-    //クラスをSingletonにする
-    private static GameStateManager _instance = new();
-    public static GameStateManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                Debug.LogError($"Error! Please correct!");
-            }
-            return _instance;
-        }
-    }
     private InGameState _gameState;
     /// <summary>
     /// InGameStateを外部から参照する用のプロパティ

@@ -4,9 +4,8 @@ using CriWare;
 using System;
 using System.Runtime.CompilerServices;
 
-public class CRIAudioManager : MonoBehaviour
+public class CRIAudioManager : SingletonBehaviour<CRIAudioManager>
 {
-    public static CRIAudioManager instance;
     [SerializeField] string _streamingAssetsPathACF;//.acf
     [SerializeField] string _cueSheetBGM;//.acb
     [SerializeField] string _cueSheetSE;//.acb
@@ -21,37 +20,29 @@ public class CRIAudioManager : MonoBehaviour
     CriAtomSource _criAtomSourceSE;
 
     int _cueIndexID;
-    void Awake()
+
+    protected override void OnAwake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            //acf
-            string path = Common.streamingAssetsPath + $"/{_streamingAssetsPathACF}.acf";
-            CriAtomEx.RegisterAcf(null, path);
+        //acf
+        string path = Common.streamingAssetsPath + $"/{_streamingAssetsPathACF}.acf";
+        CriAtomEx.RegisterAcf(null, path);
 
-            //CriAtom
-            new GameObject().AddComponent<CriAtom>();
+        //CriAtom
+        new GameObject().AddComponent<CriAtom>();
 
-            //BGM.acb
-            CriAtom.AddCueSheet(_cueSheetBGM, $"{_cueSheetBGM}.acb", null, null);
-            //SE.acb
-            CriAtom.AddCueSheet(_cueSheetSE, $"{_cueSheetSE}.acb", null, null);
+        //BGM.acb
+        CriAtom.AddCueSheet(_cueSheetBGM, $"{_cueSheetBGM}.acb", null, null);
+        //SE.acb
+        CriAtom.AddCueSheet(_cueSheetSE, $"{_cueSheetSE}.acb", null, null);
 
-            //CriAtomSourceBGM
-            _criAtomSourceBGM = gameObject.AddComponent<CriAtomSource>();
-            _criAtomSourceBGM.cueSheet = _cueSheetBGM;
-            //CriAtomSourceSE
-            _criAtomSourceSE = gameObject.AddComponent<CriAtomSource>();
-            _criAtomSourceSE.cueSheet = _cueSheetSE;
-
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        //CriAtomSourceBGM
+        _criAtomSourceBGM = gameObject.AddComponent<CriAtomSource>();
+        _criAtomSourceBGM.cueSheet = _cueSheetBGM;
+        //CriAtomSourceSE
+        _criAtomSourceSE = gameObject.AddComponent<CriAtomSource>();
+        _criAtomSourceSE.cueSheet = _cueSheetSE;
     }
+
     void Start()
     {
         //ゲーム内プレビュー用のレベルモニター機能を追加
