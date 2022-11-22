@@ -2,6 +2,8 @@ using System.Collections;
 using UnityEngine;
 using CriWare;
 using System;
+using System.Runtime.CompilerServices;
+
 public class CRIAudioManager : MonoBehaviour
 {
     public static CRIAudioManager instance;
@@ -95,17 +97,14 @@ public class CRIAudioManager : MonoBehaviour
         CRIPlayBGM(index);
     }
 
-    public void CRIPauseAudio(bool isPause) => _criAtomSourceBGM.Pause(isPause);
-    public void CRIPlaySE(int index)
+    public void CRILoopBGM(bool isTrue) => _criAtomSourceBGM.loop = isTrue;
+    public void CRIPauseAudio() => _criAtomSourceBGM.Pause(true);
+    public void CRIResume() => _criAtomSourceBGM.Pause(false);
+    public void CRIPlaySE(int index, bool isLoop)
     {
+        _criAtomSourceSE.loop = isLoop;
         this._criAtomExPlayback = _criAtomSourceSE.Play(index);
     }
-    public void CRILoopSE(int index)
-    {
-        CRIPlaySE(index);
-    }
-    public void CRIStopLoopSE(int index)
-    {
-        
-    }
+    public void CRILoopSE(int index) => CRIPlaySE(index, true);
+    public void CRIStopSE(int index) => _criAtomSourceSE.Stop();
 }
